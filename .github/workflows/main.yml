@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'next'
+    repository_dispatch:
+      types: [update_content]
 jobs:
   build:
     runs-on: ubuntu-latest
