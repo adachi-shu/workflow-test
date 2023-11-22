@@ -6,6 +6,8 @@ on:
     paths:
       - "next/**"
       - "**.yml"
+  repository_dispatch:
+    types: [update_content]
 jobs:
   build:
     runs-on: ubuntu-latest
